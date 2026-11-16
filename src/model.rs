@@ -21,30 +21,7 @@ pub fn config_dir() -> PathBuf {
     if let Ok(root) = std::env::var("XUANFUDAO_DATA_DIR") {
         return PathBuf::from(root);
     }
-    let base = env_dir("APPDATA");
-    let target = base.join("Xuanfudao");
-    // 兼容旧版本：早期版本使用 %APPDATA%\Daozai，首次运行新版本时把数据搬过来。
-    if !target.exists() {
-        let legacy = base.join("Daozai");
-        if legacy.is_dir() {
-            let _ = copy_dir_all(&legacy, &target);
-        }
-    }
-    target
-}
-
-fn copy_dir_all(from: &Path, to: &Path) -> std::io::Result<()> {
-    fs::create_dir_all(to)?;
-    for entry in fs::read_dir(from)? {
-        let entry = entry?;
-        let dst = to.join(entry.file_name());
-        if entry.file_type()?.is_dir() {
-            copy_dir_all(&entry.path(), &dst)?;
-        } else {
-            let _ = fs::copy(entry.path(), &dst);
-        }
-    }
-    Ok(())
+    env_dir("APPDATA").join("Xuanfudao")
 }
 
 fn read_kv(path: &Path) -> Vec<(String, String)> {
