@@ -8,12 +8,12 @@
 
 Windows 桌面伙伴，把消息、音乐、日程、天气和 AI 额度放到手边。
 
-[![最新版本](https://img.shields.io/github/v/release/Renly1994/xiaotang-daozai?color=7955b8&label=最新版本)](https://github.com/Renly1994/xiaotang-daozai/releases/latest)
+[![最新版本](https://img.shields.io/github/v/release/cycle410/xuanfudao?color=7955b8&label=最新版本)](https://github.com/cycle410/xuanfudao/releases/latest)
 [![Windows](https://img.shields.io/badge/Windows-10%20%2F%2011-0078D4)](#下载安装)
 [![开源许可](https://img.shields.io/badge/License-MIT-3cbf91)](LICENSE)
 [![Rust 与 egui](https://img.shields.io/badge/Rust-egui-8b6ca8)](#从源码构建与参与开发)
 
-**[下载 Windows 版](https://github.com/Renly1994/xiaotang-daozai/releases/latest)** · [使用指南](docs/USAGE.md) · [更新记录](CHANGELOG.md) · [反馈问题](https://github.com/Renly1994/xiaotang-daozai/issues)
+**[下载 Windows 版](https://github.com/cycle410/xuanfudao/releases/latest)** · [使用指南](docs/USAGE.md) · [更新记录](CHANGELOG.md) · [反馈问题](https://github.com/cycle410/xuanfudao/issues)
 
 </div>
 
@@ -121,7 +121,7 @@ Windows 桌面伙伴，把消息、音乐、日程、天气和 AI 额度放到�
 
 ## 下载安装
 
-前往 **[最新正式版](https://github.com/Renly1994/xiaotang-daozai/releases/latest)**，按使用习惯选择：
+前往 **[最新正式版](https://github.com/cycle410/xuanfudao/releases/latest)**，按使用习惯选择：
 
 | 下载文件 | 使用方式 |
 | --- | --- |
@@ -200,3 +200,15 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\package.ps1
 ![感谢支持悬浮岛的朋友们](docs/images/readme/supporters.webp)
 
 喜欢悬浮岛的话，欢迎点一个 **Star**，也可以在 **设置 → 关于 → 支持作者** 请悬浮岛喝杯咖啡。
+---
+
+## 关于本仓库
+
+本仓库是 [xiaotang-daozai](https://github.com/Renly1994/xiaotang-daozai) 的**个性化发布版**，由 [cycle410](https://github.com/cycle410) 维护。
+
+- 原项目作者：[Renly1994](https://github.com/Renly1994)（MIT License），已授权本人以自己的信息发布本定制版
+- 本版本在原版基础上做了改动：整体更名为「悬浮岛」、新增尾奏识别、岛上歌词独立缩放（50%–200%）、优化拖动手感、移除打赏入口等
+- 许可证仍为 [MIT](LICENSE)，原作者的版权声明完整保留
+- 更新检查、下载链接均指向本仓库的 Releases
+
+上游项目的所有功劳归原作者，本仓库仅包含个人定制与发布工作。

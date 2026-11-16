@@ -17,6 +17,7 @@ BEGIN
             VALUE "InternalName", "Xuanfudao"
             VALUE "OriginalFilename", "xuanfudao.exe"
             VALUE "ProductName", "悬浮岛"
+            VALUE "LegalCopyright", "Copyright (c) 2026 cycle410"
             VALUE "ProductVersion", "0.1.1"
             VALUE "FileVersion", "0.1.1"
         END
